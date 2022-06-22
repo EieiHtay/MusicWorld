@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music World</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Nav Start -->
+    <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-primary fs-3 fw-bolder" href="#">
+          <img src="./src/images/logo.png" style="width: 70px;">  
+          MUSIC WORLD
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Top</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#special">Genres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav End -->
+
+  <!-- Home Session Start -->
+  <div id="home" class=" container-fluid d-flex align-items-center ps-lg-5 ps-sm-2 ps-md-4">
+    <div data-aos="fade-up" data-aos-duration="3000">
+        <p class=" text-white fs-1 fw-bolder fst-italic" id="home-content">
+          Top 10 Songs
+        </p>
+        <button class=" btn btn-outline-primary">Listen Now...</button>
+    </div>
+  </div>
+  <!-- Home Session End -->
+
+  <!-- Top Song Session Start -->
+  <div id="topsong" class=" container-fluid bg-secondary">
+    <div class="container bg-secondary pt-5">
+      <p class=" fs-3 text-decoration-underline">This Week Top 10 Songs
+        <a href="index.html" class="btn btn-primary float-end seeMore">Back</a>
+      </p>
+      <ul class="nav nav-pills mb-3 pt-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All Songs</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-myanmar" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Myanmar Songs</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-english" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">English Songs</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-korea" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Korea Songs</button>
+        </li>
+      
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <!-- All Songs Session Start -->
+        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+          <div class="container row">
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-down-right">
+                <div class="card" style="width: 18rem;">
+                  <!-- Play music svg session start -->
+                  <a href="https://youtu.be/jTyVIYGbQwU" class=" position-absolute" style="left:35%;top: 20%;" id="play">
+                    <div class="play-button-container bg-secondary bg-opacity-25">
+                      <div class="play-button bg-primary">
+                        <svg>
+                          <title>Play</title>
+                          <polygon points="10 33 10 1 34 17"></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                    
+                  </a>
+                  <!-- Play music svg session end -->
+
+                  <img src="./src/images/badliar.jpg" class="card-img-top w-100" style="height:170px ;">
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Song Title - Bad Liar </h5>
+                    <p class="card-text">Vocalist - Imagine Dragons</p>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="flip-left">
+                <div class="card" style="width: 18rem;">
+                  <!-- Play music svg session start -->
+                  <a href="https://youtu.be/OHkLpGwtQ7c" class=" position-absolute" style="left:35%;top: 20%;" id="play">
+                    <div class="play-button-container bg-secondary bg-opacity-25">
+                      <div class="play-button bg-primary">
+                        <svg>
+                          <title>Play</title>
+                          <polygon points="10 33 10 1 34 17"></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                    
+                  </a>
+                  <!-- Play music svg session end -->
+
+                  <img src="./src/images/connie.jpg" class="card-img-top w-100" style="height:170px ;">
+                  <div class="card-body">
+                    <h5 class="card-title">Song Title - အဓိပတိအလွမ်း </h5>
+                    <p class="card-text">Vocalist - ကော်နီ</p>
+                  
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-down-left">
+                <div class="card" style="width: 18rem;">
+                  <!-- Play music svg session start -->
+                  <a href="https://youtu.be/ioNng23DkIM" class=" position-absolute" style="left:35%;top: 20%;" id="play">
+                    <div class="play-button-container bg-secondary bg-opacity-25">
+                      <div class="play-button bg-primary">
+                        <svg>
+                          <title>Play</title>
+                          <polygon points="10 33 10 1 34 17"></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                    
+                  </a>
+                  <!-- Play music svg session end -->
+
+                  <img src="./src/images/blackpink.jpg" class="card-img-top w-100" style="height:170px ;">
+                  <div class="card-body">
+                    <h5 class="card-title">How Would You Like That </h5>
+                    <p class="card-text">Vocalist - Blackpink</p>
+                    
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+        <!-- All Songs Session End -->
+
+        <!-- Myanmar Songs Session Start -->
+        <div class="tab-pane fade" id="pills-myanmar" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+          <div class="container row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card" style="width: 18rem;">
+                <!-- Play music svg session start -->
+                <a href="https://youtu.be/OHkLpGwtQ7c" class=" position-absolute" style="left:35%;top: 20%;" id="play">
+                  <div class="play-button-container bg-secondary bg-opacity-25">
+                    <div class="play-button bg-primary">
+                      <svg>
+                        <title>Play</title>
+                        <polygon points="10 33 10 1 34 17"></polygon>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                </a>
+                <!-- Play music svg session end -->
+
+                <img src="./src/images/connie.jpg" class="card-img-top w-100" style="height:170px ;">
+                <div class="card-body">
+                  <h5 class="card-title">Song Title - အဓိပတိအလွမ်း </h5>
+                  <p class="card-text">Vocalist - ကော်နီ</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card" style="width: 18rem;">
+                <!-- Play music svg session start -->
+                <a href="https://youtu.be/a89RdzxTufA" class=" position-absolute" style="left:35%;top: 20%;" id="play">
+                  <div class="play-button-container bg-secondary bg-opacity-25">
+                    <div class="play-button bg-primary">
+                      <svg>
+                        <title>Play</title>
+                        <polygon points="10 33 10 1 34 17"></polygon>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                </a>
+                <!-- Play music svg session end -->
+
+                <img src="./src/images/purity.jpg" class="card-img-top w-100" style="height:170px ;">
+                <div class="card-body">
+                  <h5 class="card-title">Song Title - လွမ်း </h5>
+                  <p class="card-text">Vocalist - Purity</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card" style="width: 18rem;">
+                <!-- Play music svg session start -->
+                <a href="https://youtu.be/-Q6jTRuedlU" class=" position-absolute" style="left:35%;top: 20%;" id="play">
+                  <div class="play-button-container bg-secondary bg-opacity-25">
+                    <div class="play-button bg-primary">
+                      <svg>
+                        <title>Play</title>
+                        <polygon points="10 33 10 1 34 17"></polygon>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                </a>
+                <!-- Play music svg session end -->
+
+                <img src="./src/images/waigyi.jpg" class="card-img-top w-100" style="height:170px ;">
+                <div class="card-body">
+                  <h5 class="card-title">Title - သတိရတာထက်ပိုတယ် </h5>
+                  <p class="card-text">Vocalist - ဝေကြီး ၊ ခေမီကို</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Myanmar Songs Session End -->
+
+        <!-- English Songs Session Start -->
+        <div class="tab-pane fade" id="pills-english" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+          <div class="container row">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 p-3">
+              <div class="card" style="width: 16rem;">
+                <!-- Play music svg session start -->
+                <a href="https://youtu.be/jTyVIYGbQwU" class=" position-absolute" style="left:35%;top: 20%;" id="play">
+                  <div class="play-button-container bg-secondary bg-opacity-25">
+                    <div class="play-button bg-primary">
+                      <svg>
+                        <title>Play</title>
+                        <polygon points="10 33 10 1 34 17"></polygon>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                </a>
+                <!-- Play music svg session end -->
+
+                <img src="./src/images/badliar.jpg" class="card-img-top w-100" style="height:170px ;">
+                <div class="card-body">
+                  <h5 class="card-title">Song Title - Bad Liar </h5>
+                  <p class="card-text">Vocalist - Imagine Dragons</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 p-3">
+              <div class="card" style="width: 16rem;">
+                <!-- Play music svg session start -->
+                <a href="https://youtu.be/F5oC5DsFk5c" class=" position-absolute" style="left:35%;top: 20%;" id="play">
+                  <div class="play-button-container bg-secondary bg-opacity-25">
+                    <div class="play-button bg-primary">
+                      <svg>
+                        <title>Play</title>
+                        <polygon points="10 33 10 1 34 17"></polygon>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                </a>
+                <!-- Play music svg session end -->
+
+                <img src="./src/images/mylove.jpg" class="card-img-top w-100" style="height:170px ;">
+                <div class="card-body">
+                  <h5 class="card-title">Song Title - My Love </h5>
+                  <p class="card-text">Vocalist - Westlife</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 p-3">
+              <div class="card" style="width: 16rem;">
+                <!-- Play music svg session start -->
+                <a href="https://youtu.be/jH1RNk8954Q" class=" position-absolute" style="left:35%;top: 20%;" id="play">
+                  <div class="play-button-container bg-secondary bg-opacity-25">
+                    <div class="play-button bg-primary">
+                      <svg>
+                        <title>Play</title>
+                        <polygon points="10 33 10 1 34 17"></polygon>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                </a>
+                <!-- Play music svg session end -->
+
+                <img src="./src/images/kingandqueen.jpg" class="card-img-top w-100" style="height:170px ;">
+                <div class="card-body">
+                  <h5 class="card-title">Title - king&Queen </h5>
+                  <p class="card-text">Vocalist - Ava Max</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 p-3">
+              <div class="card" style="width: 16rem;">
+                <!-- Play music svg session start -->
+                <a href="https://youtu.be/T69lvblpe-4" class=" position-absolute" style="left:35%;top: 20%;" id="play">
+                  <div class="play-button-container bg-secondary bg-opacity-25">
+                    <div class="play-button bg-primary">
+                      <svg>
+                        <title>Play</title>
+                        <polygon points="10 33 10 1 34 17"></polygon>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                </a>
+                <!-- Play music svg session end -->
+
+                <img src="./src/images/angelbaby.jpg" class="card-img-top w-100" style="height:170px ;">
+                <div class="card-body">
+                  <h5 class="card-title">Title - Angel Baby </h5>
+                  <p class="card-text">Vocalist - Troye Sivan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- English Songs Session End -->
+
+        <!-- Korea Songs Session Start -->
+        <div class="tab-pane fade" id="pills-korea" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+            <div class="container row">
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card" style="width: 18rem;">
+                  <!-- Play music svg session start -->
+                  <a href="https://youtu.be/ioNng23DkIM" class=" position-absolute" style="left:35%;top: 20%;" id="play">
+                    <div class="play-button-container bg-secondary bg-opacity-25">
+                      <div class="play-button bg-primary">
+                        <svg>
+                          <title>Play</title>
+                          <polygon points="10 33 10 1 34 17"></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                    
+                  </a>
+                  <!-- Play music svg session end -->
+
+                  <img src="./src/images/blackpink.jpg" class="card-img-top w-100" style="height:170px ;">
+                  <div class="card-body">
+                    <h5 class="card-title">How Would You Like That </h5>
+                    <p class="card-text">Vocalist - Blackpink</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card" style="width: 18rem;">
+                  <!-- Play music svg session start -->
+                  <a href="https://youtu.be/jjskoRh8GTE" class=" position-absolute" style="left:35%;top: 20%;" id="play">
+                    <div class="play-button-container bg-secondary bg-opacity-25">
+                      <div class="play-button bg-primary">
+                        <svg>
+                          <title>Play</title>
+                          <polygon points="10 33 10 1 34 17"></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                    
+                  </a>
+                  <!-- Play music svg session end -->
+
+                  <img src="./src/images/Ineedyou.jpg" class="card-img-top w-100" style="height:170px ;">
+                  <div class="card-body">
+                    <h5 class="card-title">Song Title - I Need You </h5>
+                    <p class="card-text">Vocalist - BTS</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card" style="width: 18rem;">
+                  <!-- Play music svg session start -->
+                  <a href="https://youtu.be/4gXmClk8rKI" class=" position-absolute" style="left:35%;top: 20%;" id="play">
+                    <div class="play-button-container bg-secondary bg-opacity-25">
+                      <div class="play-button bg-primary">
+                        <svg>
+                          <title>Play</title>
+                          <polygon points="10 33 10 1 34 17"></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                    
+                  </a>
+                  <!-- Play music svg session end -->
+
+                  <img src="./src/images/dm.jpg" class="card-img-top w-100" style="height:170px ;">
+                  <div class="card-body">
+                    <h5 class="card-title">Song Title - DM </h5>
+                    <p class="card-text">Vocalist - Fromis_9</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Korea Songs Session End -->
+
+      </div>
+    </div>
+  </div>
+  <!-- Top Song Session End -->
+
+
+  <!-- Contact Session Start -->
+  <div class="container-fluid bg-dark" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 py-lg-4 mb-4" data-aos="fade-right">
+          <p class="text-white-50 fs-4 text-decoration-underline">Your Satisfaction</p>
+          <img src="./src/images/contact.png" class="w-75"><br>
+          <i class="fa-regular fa-star fa-2x text-info"></i>
+          <i class="fa-regular fa-star fa-2x text-info"></i>
+          <i class="fa-regular fa-star fa-2x text-info"></i>
+          <i class="fa-regular fa-star fa-2x text-info"></i>
+          <i class="fa-regular fa-star fa-2x text-info"></i>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 py-lg-4 mb-4" data-aos="zoom-out-down">
+            <p class=" text-info fs-3 text-decoration-underline">Contact Us</p>
+            <form>
+              <div class="input-group mb-3">
+                <span class="input-group-text">User Name</span>
+                <input type="text" class="form-control">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text">Email</span>
+                <input type="text" class="form-control">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text">Message</span>
+                <input type="text" class="form-control">
+              </div>
+              <button class=" btn btn-outline-primary">Send Message</button>
+            </form>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 py-lg-5 py-sm-5 ps-lg-5 mb-4" data-aos="fade-left">
+          <p class="text-white-50">Quick Links</p>
+          <a href="#home" class=" d-block text-decoration-none text-white-50">Home</a>
+          <a href="#topsong" class=" d-block text-decoration-none text-white-50">Top</a>
+          <a href="#about" class=" d-block text-decoration-none text-white-50">About</a>
+          <a href="#genre" class=" d-block text-decoration-none text-white-50">Genres</a>
+          <a href="#contact" class=" d-block text-decoration-none text-white-50">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact Session End -->
+
+  <!-- Footer Session Start -->
+  <div class="container-fluid bg-black text-center text-white footerText">
+    Design & Develop by 
+    <img src="./src/images/ee.png" alt="" class="footerImg">
+    <img src="./src/images/ee.png" alt="" class="footerImg">
+    <img src="./src/images/hh.png" alt="" class="footerImg">
+    to MUSIC WORLD
+  </div>
+  <!-- Footer Session End -->
+
+
+</body>
+<script src="./node_module/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1500
+  });
+</script>
+</html>

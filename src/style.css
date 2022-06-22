@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Lobster&family=Poppins:wght@500;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+#home{
+    background-image: url('./images/bg2.PNG');
+    width: 100%;
+    height: 100vh;
+   
+    background-size: cover;
+    background-position: center;
+    
+   
+}
+#home-content{
+    letter-spacing: 7px;
+    /* font-family: 'Beau Rivage', cursive !important; */
+}
+#card_releaseOne{
+    width: 27rem;
+    height: 24rem;
+}
+
+.card_releaseTwo{
+    width: 16rem;
+}
+.seeMore{
+    margin-top: 10px;
+}
+#topsong{
+    overflow: hidden;
+}
+#release{
+    overflow: hidden;
+}
+#about{
+    background-image: url('./images/about.png');
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-color: #1f2728;
+    overflow: hidden;
+}
+#genre{
+    overflow: hidden;
+}
+#recommand{
+    overflow: hidden;
+}
+#contact{
+    overflow: hidden;
+}
+.footerImg{
+    width:30px; 
+    height:30px;
+}
+
+@media screen and (max-width:1025px) {
+    #home{
+        height: 96vh;
+    }
+    #card_releaseOne{
+        width: 40rem;
+    }
+    .card_releaseTwo{
+        width: 17rem;
+        /* align-items: center; */
+        margin-left: 2%;
+    }
+    .release{
+        padding: 7px;
+    }
+    #about{
+        background-size: 270px;
+        font-size: large;
+    }
+    #aboutImg{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    #home{
+        height: 89vh;
+    }
+    #home-content{
+        color:yellow;
+    }
+    #card_releaseOne{
+        width: 18rem;
+    }
+    .seeMore{
+        margin-top: 33px;
+    }
+    #about{
+        background-size: 300px;
+        font-size: small;
+        background-image: none;
+    }
+    #aboutImg{
+        width: 200px;
+    }
+    .footerImg{
+        width: 20px;
+        height: 20px;
+    }
+    .footerText{
+        font-size: 11px;
+    }
+}
+
+.play-button-container .play-button svg {
+    width: 34px;
+    height: 34px;
+}
+.play-button-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0.2) 100%);
+    box-shadow: 0 24px 72px 0 rgb(0 0 0 / 50%);
+    transition: 300ms all cubic-bezier(.4,0,.2,1);
+}
+.play-button-container .play-button {
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #fff;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms all cubic-bezier(.4,0,.2,1);
+}
+
+
+
+ 
